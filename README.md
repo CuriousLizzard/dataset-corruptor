@@ -23,7 +23,7 @@ cd dataset-corruptor
 
 # Install required Python libraries
 pip install pandas numpy num2words
----
+```
 
 ## 🛠 Available Methods
 
