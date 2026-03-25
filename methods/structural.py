@@ -1,4 +1,5 @@
 import copy
+import random
 
 def row_duplicator(row, times=1, **kwargs):
     """
@@ -13,8 +14,6 @@ def row_duplicator(row, times=1, **kwargs):
     """
     duplicates = [copy.deepcopy(row) for _ in range(times)]
     return duplicates
-
-import random
 
 def column_shuffler(row, col1, col2, probability=1.0, **kwargs):
     """

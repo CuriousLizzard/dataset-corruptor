@@ -136,8 +136,6 @@ def special_char_injector(value, chars=None, probability=0.1, **kwargs):
 
     return ''.join(result)
 
-
-import random
 # 4
 def typo_generator(value, error_rate=0.1, **kwargs):
     """
@@ -170,8 +168,5 @@ def typo_generator(value, error_rate=0.1, **kwargs):
 
     return ''.join(result)
 
-original = "The quiet machine hummed softly in the corner while scattered notes covered the desk. " \
-"Someone had tried to organize them earlier, but the ideas kept shifting faster than they could " \
-"be written down. Outside, a faint breeze moved the trees in slow waves, as if everything " \
-      "was thinking at its own pace."
+
 
