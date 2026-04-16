@@ -6,8 +6,8 @@ from engine import ChaosEngine
 def main():
     # File paths
     config_path = 'config.json'
-    input_path = os.path.join('datasets', 'steam_games_2026.csv')
-    output_path = os.path.join('datasets', 'steam_games_DIRTY.csv')
+    input_path = os.path.join('datasets', 'heart.csv')
+    output_path = os.path.join('datasets', 'heart_DIRTY.csv')
 
     # 1. Load configuration
     with open(config_path, 'r', encoding='utf-8') as f:
@@ -26,12 +26,12 @@ def main():
     dirty_df = engine.run(df)
 
     # 4. Results preview (QoL: Preview Mode)
-    print("\n--- Comparison (First 10 rows) ---")
-    columns_to_show = ['Name', 'Release_Date', 'Price_USD', 'Steam_Deck_Status']
-    print("BEFORE:")
-    print(df[columns_to_show].head(10))
-    print("\nAFTER:")
-    print(dirty_df[columns_to_show].head(10))
+    # print("\n--- Comparison (First 10 rows) ---")
+    # columns_to_show = ['Name', 'Release_Date', 'Price_USD', 'Steam_Deck_Status']
+    # print("BEFORE:")
+    # print(df[columns_to_show].head(10))
+    # print("\nAFTER:")
+    # print(dirty_df[columns_to_show].head(10))
 
     # 5. Save results
     dirty_df.to_csv(output_path, index=False)
