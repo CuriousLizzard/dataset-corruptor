@@ -18,7 +18,7 @@ To set up the environment and install all necessary dependencies, run:
 
 ```bash
 # Clone the repository
-git clone [https://github.com/CuriousLizzard/dataset-corruptor.git](https://github.com/CuriousLizzard/dataset-corruptor.git)
+git clone https://github.com/CuriousLizzard/dataset-corruptor.git
 cd dataset-corruptor
 
 # Install required Python libraries
@@ -769,9 +769,14 @@ if __name__ == "__main__":
 
 ## 📊 Data Credits
 
-The sample dataset used for demonstration in this project is provided by **Waddah Ali**. 
+The datasets used in this project are provided by:
 
-- **Source:** [Steam Games Dataset on Kaggle](https://www.kaggle.com/datasets/waddahali/top-1000-steam-games-20242026/data)
-- **License:** [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+* **Waddah Ali**
+    * **Source:** [Steam Games Dataset on Kaggle](https://www.kaggle.com/datasets/waddahali/top-1000-steam-games-20242026/data)
+    * **License:** [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-*Please ensure compliance with the Creative Commons terms if you intend to redistribute or modify the sample data.*
+* **Aroma Dsouza**
+    * **Source:** [Heart Disease Dataset](https://www.kaggle.com/code/aromadsouza/heart-disease/output)
+    * **License:** [Database Contents License (DbCL) v1.0](https://opendatacommons.org/licenses/dbcl/1-0/)
+
+*Please ensure compliance with the respective license terms if you intend to redistribute or modify the data.*
