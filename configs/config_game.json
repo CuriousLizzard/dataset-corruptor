@@ -1,0 +1,40 @@
+{
+  "structural": [
+    {
+      "method": "column_shuffler",
+      "probability": 0.05,
+      "kwargs": {
+        "col1": "Primary_Genre",
+        "col2": "All_Tags"
+      }
+    }
+  ],
+  "columns": {
+    "Name": {
+      "probability": 0.3,
+      "methods": [
+        ["strings", "typo_generator", {"error_rate": 0.1}],
+        ["strings", "case_scrambler", {"mode": "random"}]
+      ]
+    },
+    "Release_Date": {
+      "probability": 0.5,
+      "methods": [
+        ["dateandtime", "format_shifter", {"target_format": "random"}]
+      ]
+    },
+    "Price_USD": {
+      "probability": 0.15,
+      "methods": [
+        ["numeric", "outlier_creator", {"mode": "extreme"}],
+        ["nulls", "null_injector", {"mode": "nan"}]
+      ]
+    },
+    "Steam_Deck_Status": {
+      "probability": 0.5,
+      "methods": [
+        ["nulls", "placeholder_filler", {"mode": "random"}]
+      ]
+    }
+  }
+}
