@@ -5,6 +5,7 @@ from . import nulls
 from . import dateandtime
 from . import logic
 from . import structural
+from . import numeric
 
 METHODS = {
     'strings': {
@@ -26,6 +27,11 @@ METHODS = {
     'logic': {
         'category_shifter': logic.category_shifter,
         'synonym_swapper': logic.synonym_swapper,
+    },
+    'numeric': {
+        'outlier_creator': numeric.outlier_creator,
+        'type_caster': numeric.type_caster,
+        'precision_breaker': numeric.precision_breaker,
     },
     'structural': {
         'row_duplicator': structural.row_duplicator,
